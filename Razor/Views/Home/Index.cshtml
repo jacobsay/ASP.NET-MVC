@@ -1,0 +1,91 @@
+﻿@{
+    DateTime date = DateTime.Now;
+    string morning = "Good morning";
+    string evening = "Good evening";
+    string hello = "Hello";
+
+    string[] users = { "Greed", "Marcus", "Henry" };
+}
+
+<div>
+    Date: @date.ToLongDateString();
+</div>
+
+@if (date.Hour < 12) 
+{
+    <h2>@morning</h2>
+}
+else if (date.Hour > 17)
+{
+    <h2>@evening</h2>
+}
+else
+{
+     <h2>@hello</h2>
+}
+<br />
+
+<p>Foreach:</p>
+<ul>
+    @foreach(var user in users)
+    {
+        <li>@user</li>
+    }
+</ul><br />
+
+<p>For:</p>
+<ul>
+    @for(var j = 0; j < users.Length; j++)
+    {
+        <li>@users[j]</li>
+    }
+</ul><br />
+
+@{
+    var i = 0;
+}
+
+<p>While:</p>
+<ul>
+    @while(i < users.Length)
+    {
+        <li>@users[i++]</li>
+    }
+</ul><br />
+
+@{
+    i = 0;
+}
+
+<p>Do While:</p>
+<ul>
+    @do
+    {
+        <li>@users[i++]</li>
+    }
+    while (i < users.Length);
+</ul><br />
+
+<p>Try Catch Finally</p>
+@try
+{
+    throw new Exception("Something wrong");
+}
+catch (Exception ex)
+{
+    <text>@ex.Message</text><br />
+}
+finally
+{
+    @: Finally
+}
+<br />
+
+@functions
+{
+    public int Sum(int a, int b) => a + b;
+    public int Square(int a, int b) => a * b;
+}
+
+<h2>Sum: 2 + 3 = @Sum(2, 3)</h2>
+<h2>Square: 2 * 3 = @Square(2, 3)</h2>

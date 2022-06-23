@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace Introduction.Controllers
 {
@@ -7,6 +8,11 @@ namespace Introduction.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult About()
+        {
+            return View("~/Views/Home/Contacts.cshtml");
         }
     }
 }

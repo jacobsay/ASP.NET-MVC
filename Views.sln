@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewData_ViewBag_Model", "V
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Layout", "Layout\Layout.csproj", "{2471D0A5-B238-438E-B14A-9714127B3753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewImports", "ViewImports\ViewImports.csproj", "{4251D66E-942B-4892-AEAA-D1BC2504E8BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewImports", "ViewImports\ViewImports.csproj", "{4251D66E-942B-4892-AEAA-D1BC2504E8BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialView", "PartialView\PartialView.csproj", "{B059BDE5-7EB7-4FC3-B3CE-289FD5BA9198}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4251D66E-942B-4892-AEAA-D1BC2504E8BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4251D66E-942B-4892-AEAA-D1BC2504E8BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4251D66E-942B-4892-AEAA-D1BC2504E8BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B059BDE5-7EB7-4FC3-B3CE-289FD5BA9198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B059BDE5-7EB7-4FC3-B3CE-289FD5BA9198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B059BDE5-7EB7-4FC3-B3CE-289FD5BA9198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B059BDE5-7EB7-4FC3-B3CE-289FD5BA9198}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

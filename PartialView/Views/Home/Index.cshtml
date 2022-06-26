@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Main Page</title>
+</head>
+<body>
+    <h1>Welcome to Main Page</h1>
+    <div>
+        @{
+            List<User> users = new List<User>()
+            {
+                new User("GreedNeSS", 30),
+                new User("Marcus", 45),
+                new User("Henry", 23),
+            };
+            await Html.RenderPartialAsync("Part", users);
+        }
+    </div>
+</body>
+</html>
